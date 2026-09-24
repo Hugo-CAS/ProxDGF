@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "ProxDGF: Proximal Dynamic Graph Fusion"
+type: software
+version: 0.1.0
+date-released: 2026-09-24
+license: MIT
+authors:
+  - family-names: Tian
+    given-names: Hu
+  - family-names: Wang
+    given-names: Yutong
+  - family-names: Wang
+    given-names: Yuejiao

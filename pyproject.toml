@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proxdgf"
+version = "0.1.0"
+description = "Proximal Dynamic Graph Fusion for intraday realized-volatility forecasting"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Hu Tian"},
+  {name = "Yutong Wang"},
+  {name = "Yuejiao Wang"},
+]
+keywords = [
+  "dynamic graph",
+  "graph neural network",
+  "realized volatility",
+  "time series",
+  "finance",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch>=2.2",
+]
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+proxdgf = ["py.typed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
