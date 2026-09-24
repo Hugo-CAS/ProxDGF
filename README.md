@@ -22,7 +22,7 @@ hyperparameter-search results, and plotting code.
 Python 3.10 or later and PyTorch 2.2 or later are required.
 
 ```bash
-git clone https://github.com/<your-account>/ProxDGF.git
+git clone https://github.com/Hugo-CAS/ProxDGF.git
 cd ProxDGF
 python -m pip install -e .
 ```
